@@ -1,0 +1,54 @@
+//main: ..//style.less
+.team__social{
+    display: flex;
+    justify-content: center;
+}
+
+.social__item{
+  width: 55px;
+  height: 55px;
+  background-color: #f5e28e;
+  border-right: 1px solid #d98080;
+  padding: 10px 12px;
+    
+  color: #d98080;
+  text-decoration: none;
+  font-size: 30px;
+  transition: color .3s linear;
+  transition: background .3s linear;
+    
+    &:last-child{
+        border-right: none;
+    }
+    
+    &:hover{
+        background-color:  #d98080;
+        color: @white;
+    }
+    
+    @media @mobileSm{
+     width: 40px;
+     height: 40px;
+     padding: 8px 4px;
+     font-size: 22px;
+    } 
+}
+
+.team__about{
+    margin-top: 30px;
+}
+
+.team__name{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @black;
+}    
+
+.team__position{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style:italic;
+    font-weight: 300;
+}

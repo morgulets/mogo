@@ -1,0 +1,56 @@
+//main:..//style.less
+
+.statics{
+    background-color: #aee0d2;
+}
+
+.statics__inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stat__content{
+    padding: 70px 25px;
+    flex: 1 1 0;
+    border-left: 1px solid #c6e9e0;
+    text-align: center;
+    color: #fff; 
+    
+    &:last-child{
+        border-right: 1px solid #c6e9e0;
+    }
+    
+    @media @tablet{
+        padding: 14px 20px;
+    }
+    
+    @media @mobileSm{
+        padding: 6px 20px;
+    }
+    
+    
+}
+
+.stat__num{
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    
+    @media @tablet{
+        font-size: 50px;
+    }
+    
+    @media @mobileSm{
+        font-size: 40px;
+    }
+}
+
+.stat__name{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    @media @tablet{
+        font-size: 12px;
+    }
+}

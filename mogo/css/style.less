@@ -1,0 +1,86 @@
+//compress: true
+
+//fonts 
+
+//font-family: 'Kaushan Script', cursive;
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Roboto', sans-serif;
+//===============================================//
+
+@import "vars";
+
+html{
+    font-size: 10px;
+}
+
+
+body{
+    margin: 0;
+    font-size: 15px;
+    color: @gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.page{
+    overflow: hidden;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+}
+
+.section{
+    padding: 100px 0;
+    
+    @media @tablet{
+            padding: 60px 0;
+    }
+    
+    @media @mobile{
+            padding: 10px 0;
+    }
+
+    
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+//====================blocks==================//
+
+@import "blocks/intro";
+@import "blocks/slider";
+@import "blocks/sectionTitles";
+@import "blocks/card";
+@import "blocks/statics";
+@import "blocks/services";
+@import "blocks/devices";
+@import "blocks/weDo";
+@import "blocks/slick";
+@import "blocks/team";
+@import "blocks/logos";
+@import "blocks/our__works";
+@import "blocks/reviews";
+@import "blocks/blog";
+@import "blocks/map";
+@import "blocks/footer-main";
+@import "blocks/footer-input";
+@import "blocks/footer-blogs";
+@import "blocks/footer-instagram";
+@import "blocks/copyright";
+

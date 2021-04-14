@@ -1,0 +1,35 @@
+//main:..//style.less
+
+.section--devices{
+    background: url(..//img/devices/Layer%2045.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+.devices{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.device__tablet{
+   display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.device__phone{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    z-index: 2;
+    
+    @media @mobile{
+    display: block;
+        max-width: 50%;
+        max-height: 70%;
+        bottom: -30px;
+    } 
+}

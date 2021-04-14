@@ -1,0 +1,70 @@
+//main:..//style.less
+
+.section-globalTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subTitle {
+	font-size: 24px;
+    color: @black;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    margin-bottom: 20px;
+    
+    @media @tablet{
+        margin-bottom: 12px;
+        margin-top: 30px;
+    }
+}
+
+.title {
+	font-size: 30px;
+    color: @black;
+    text-transform: uppercase;
+    transition: border .2s linear;
+    margin-bottom: 45px;
+    position: relative;
+    
+    &:after{
+        content: "";
+        display: block;
+       height:5px;
+        width: 70px;
+        background: #d98080;
+        
+        margin: 30px auto 0;
+    }
+    
+    &:hover{
+        cursor: pointer;
+        text-decoration-line: underline;
+    }
+    
+     @media @tablet{
+            margin-bottom: 25px;
+    }
+    
+    @media @mobile{
+        font-size: 25px
+    } 
+}
+    
+.describes-content {
+    font-size: 15px;
+    line-height: 2;
+    color: @gray;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
+    @media @tablet{
+        margin: 20px 0;
+        padding: 0 22px;
+    }
+    
+    @media @mobile{
+        font-size: 12px
+    } 
+    
+}

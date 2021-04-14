@@ -1,0 +1,47 @@
+//main:..//style.less
+
+
+.footer-col--third{
+    width: 22%;
+    @media @tablet{
+       width: 30%;
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+    
+    @media @mobile{
+        margin: 0 auto;
+        min-width: 270px;
+    }
+    
+    @media @mobileSm{
+       margin: 0 auto;
+    }
+    
+}
+
+.instagram{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instagram__item{
+    width: 33.33333%;
+    border: 1px solid @white;
+    border-bottom: none;
+    border-right: none;
+    
+    img{
+       width: 90px;
+        height: 90px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.footer__title{
+    @media @mobileSm{
+       text-align: center;
+    }
+}
